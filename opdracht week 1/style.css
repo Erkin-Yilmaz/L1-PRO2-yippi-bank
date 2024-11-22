@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #8B0000;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 20px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+button {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+
+#dateDisplay {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: black;
+}
