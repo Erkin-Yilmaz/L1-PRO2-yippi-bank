@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="brand">
+                    <h1>Yippie Bank</h1>
+                </div>
+                <div class="points">
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="dateDisplay"></div>
+
+    <main>
+       
+        <div class="container">
+            <h2>Jouw persoonlijke dashboard</h2>
+            <p>Welkom op je persoonlijke pagina, speciaal voor jouw account.</p>
+            <button onclick="logout()">Uitloggen</button>
+        </div>
+
+        
+        <div class="container">
+            <div class="sections">
+                <div class="section-left">
+                    <h3>Rekening: €-384</h3>
+                    <p>Recente aankopen: </p>
+                    <button>Point shop</button>
+                    <button onclick="beherenUser3()">rekeningen beheren</button>
+                </div>
+                <div class="section-center">
+                    <button>Overschrijven</button>
+                    <button>Aandelen beheren</button>
+                </div>
+                <div class="section-right">
+                    <h3>Crypto</h3>
+                    <p>Bitcoin</p>
+                    <p>Ethereum (ETH)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
