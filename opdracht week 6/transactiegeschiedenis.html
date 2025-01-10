@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactiegeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="brand">
+                <h1>Transactiegeschiedenis</h1>
+            </div>
+            <div class="points">
+                <span>Uw punten: 20 </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Transactiegeschiedenis</h2>
+
+            
+            <form id="filterForm">
+                <label for="typeFilter">Filter op type:</label>
+                <select id="typeFilter">
+                    <option value="Alle">Alle</option>
+                    <option value="inkomend">Inkomend</option>
+                    <option value="uitgaand">Uitgaand</option>
+                </select>
+
+                <label for="dateFilter">Filter op datum:</label>
+                <input type="date" id="dateFilter">
+
+                <button type="submit">Filteren</button>
+                <button onclick="history.back()">Go Back</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Type</th>
+                        <th>Bedrag</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionHistory">
+                    <tr>
+                        <td colspan="3">Geen transacties beschikbaar.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="app2.js"></script>
+</body>
+</html>
